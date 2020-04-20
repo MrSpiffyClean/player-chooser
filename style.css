@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+
+body {
+  background: linear-gradient(to bottom,
+    #C33C23, #FFB447, #FFB447, #C33C23);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%; /* Assuming width will always stay at 100%*/
+  
+  margin: 0px;
+  
+  font-family: 'Comic Neue', cursive; /* Note that this doesn't apply to bottons in the ESR, for some reason */
+}
+
+/* Top / Title formatting */
+
+div.top_container {
+  display: flex;
+}
+
+div.title_div {
+  margin-left: auto;
+  margin-right: auto;
+  
+  background: linear-gradient(#9A91AC, #FFB9C4);
+  padding: 15px 80px;
+  border: 3px solid black;
+  border-radius: 0px 0px 60px 60px;
+}
+
+div.title_div h1 {
+  margin: 0px;
+}
+
+/* Spacer formatting */
+div.spacer {
+  flex: 0 0 0;
+}
+
+div.middle_container > div {
+  flex: auto;
+}
+
+/* Player holder formatting */
+
+div.player_holder {
+  padding-left: 25px;
+  justify-content:center;
+  align-items:center;
+}
+
+div.player_holder p {
+  
+  font-size: 30px;
+}
+
+/* Middle contaienr formatting */
+
+div.middle_container {
+  flex: 0 0;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  
+  height: auto;
+}
+
+/*div.middle_container div {
+  flex: auto;
+}*/
+
+/* Middle stuff formatting */
+
+div.middle_element {
+  /*display:flex;*/
+  display: inline-block;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  
+  background: linear-gradient(#CDF1AF, #88BBE4);
+  border: 3px solid purple;
+  border-radius: 15px;
+  margin: 0px;
+  padding: 25px;
+}
+
+div.middle_element p {
+}
+
+/* Input formatting */
+
+div.input_field_container {
+  display: inline-block;
+  background:  #FFB447;
+  /*border: 1px solid green;*/
+  border-radius: 20px;
+  padding: 20px;
+}
+
+input {
+  font-family: 'Comic Neue', cursive;
+  
+  background:  #FFB447;
+  border: 0px; /* Disabling input browser style */
+  border-bottom: 1px solid purple;
+  padding: 10px 0px 10px 0px;
+}
+
+button {
+  font-family: 'Comic Neue', cursive;
+  
+  background: #469BC3;
+  border: 0px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px 0px #9B90A8;
+  padding: 10px 20px 10px 20px;
+}
+
+button:active {
+  color: red;
+}
+
+/* Alert box formatting */
+
+div.alert_box_container {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  
+  width: 100%;
+  height: 100%;
+  
+  background-color: rgba(180, 180, 180, .75);;
+}
+
+div.alert_box {
+  font-size: 50px;
+  white-space: pre-line;
+}
